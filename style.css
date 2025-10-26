@@ -21,7 +21,6 @@ body::after {
   right: -250px;
   width: 800px;
   height: 800px;
-  background: url('img/back-logo.png') no-repeat center/contain;
   opacity: 0.1;
   pointer-events: none;
   z-index: -1;
@@ -33,7 +32,6 @@ a {
   font-weight: 600;
 }
 
-/* parte do header e do navbar */
 .header {
   position: sticky;
   top: 0;
@@ -138,7 +136,7 @@ a {
     display: none;
 }
 
-/* estileira dos conteiner */
+
 .content-section {
   min-height: 100vh;
   display: flex;
@@ -196,6 +194,11 @@ a {
   flex: 1;
 }
 
+.sobre-image {
+  margin: 0 30px;
+  right: 40px;
+}
+
 .content-section h1,
 .content-section h2,
 .content-section p,
@@ -206,7 +209,7 @@ a {
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* o js vai pegar essa parte quando ela tiver visivel */
+
 .content-section.is-visible h1,
 .content-section.is-visible h2,
 .content-section.is-visible p,
@@ -216,7 +219,7 @@ a {
   transform: translateY(0);
 }
 
-/* aqui da um delay dos elementos */
+
 .content-section.is-visible p {
   transition-delay: 0.2s;
 }
@@ -225,7 +228,7 @@ a {
   transition-delay: 0.3s;
 }
 
-/* galeria dos artesantos */
+
 .artesanatos-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
